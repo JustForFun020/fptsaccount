@@ -1,0 +1,374 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #2371af;
+  --blue2: #00b1da;
+  --blue3: #68b9d6;
+  --blue4: #2387ca;
+  --blue5: #337ab7;
+  --indigo: #0078d7;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange2: #e45c2d;
+  --orange1: #f47e34;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #00b1da;
+  --white: #fff;
+  --gray: #656364;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+html {
+  font-family: var(--font-family-sans-serif);
+}
+
+.container {
+  max-width: 100%;
+}
+
+.color--blue {
+  color: var(--blue4);
+}
+
+li {
+  list-style: none;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.header__primary {
+  border: 1px solid #ccc;
+}
+
+.header__primary .header__primary--about {
+  /* text-align: left !important; */
+  /* transform: translateY(-10px); */
+}
+
+.header .row .col-9 {
+  padding: initial !important;
+}
+
+.header .row .col-3 {
+  text-align: right;
+  padding: initial !important;
+}
+
+.logo {
+  width: 215px;
+  height: 50px;
+}
+
+.icon {
+  border-radius: 50%;
+  background-color: rgb(230, 224, 224);
+  font-size: 15px;
+  padding: 5px;
+  margin: 8px;
+  box-shadow: 2px 0px 0px #ccc;
+}
+
+.nav__first {
+  background-color: var(--blue);
+  border-bottom: 3px solid var(--orange1);
+}
+
+.nav__first li {
+  padding: 10px;
+}
+
+.nav__first li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__first li:nth-child(1) {
+  background-color: var(--orange1);
+  font-weight: 600;
+}
+
+.body {
+  margin-top: 20px;
+}
+
+.body__content h1 {
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.body__content p {
+  font-size: 15px;
+}
+
+.nav__second {
+  border-bottom: 1px solid #ccc;
+}
+
+.nav__second li {
+  padding: 0 10px 10px;
+  opacity: 0.7;
+}
+
+.nav__second li:first-child {
+  border-bottom: 3px solid var(--blue5);
+  color: var(--blue5);
+}
+
+.nav__third {
+  flex-direction: column;
+  padding: 14px;
+  box-shadow: 1px 2px 8px 3px rgb(233, 227, 227);
+  border: 1px solid #f5f3f3;
+}
+
+.nav__third li {
+  width: 100%;
+  border-bottom: 1px solid rgb(233, 227, 227);
+  padding: 15px 0;
+}
+
+.nav__third li:last-child {
+  border: none;
+}
+
+.nav__third form button {
+  border: none;
+  background-color: var(--blue);
+  width: 110px;
+  height: 40px;
+  transform: translateX(-5px);
+  border: 1px solid #a79999;
+  color: #fff;
+}
+
+.footer {
+  background-color: #f5f3f3;
+}
+
+.footer .nav__fourth {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer .nav__fourth > li:nth-child(4) {
+  text-align: right;
+}
+
+.nav__fourth ul li {
+  font-size: 13px;
+  padding: 10px 0;
+  color: var(--blue3);
+}
+
+.nav__fourth .contact ul li {
+  color: unset;
+}
+
+.nav__fourth .contact span {
+  padding: 8px;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+  color: var(--cyan);
+  font-size: 7px;
+}
+
+.nav__fourth .contact span:nth-child(1) {
+  background-color: var(--cyan);
+  color: var(--light);
+}
+
+.nav__fourth .col {
+  padding: 10px 18px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.footer__second ul li {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.footer__second .col-5 li {
+  float: right;
+}
+
+.footer__second .col-5 span {
+  padding: 1px 5px;
+  font-size: 18px;
+}
+
+.footer__second ul:nth-child(1) li {
+  padding: 0 10px;
+}
+
+.footer__second ul:nth-child(1) li:nth-child(3) {
+  border-left: 1px solid var(--gray);
+  border-right: 1px solid var(--gray);
+}
+
+.copy {
+  padding: 0 10px 0 0 !important;
+}
+
+.web--hint {
+  padding: 1px 5px;
+  font-size: 20px;
+}
+
+.fa-brands {
+  color: var(--light);
+}
+
+form {
+  padding-left: unset !important;
+}
+
+.btn__show {
+  background-color: unset;
+  border: none;
+  padding: 10px;
+  color: var(--orange1);
+}
+
+.icon-close {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .footer__second--web {
+    text-align: left !important;
+  }
+  .contact {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 767px) {
+  .contact {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 579px) {
+  form label {
+    display: none;
+  }
+
+  .nav__first .icon-close {
+    display: block;
+  }
+
+  .nav__first li {
+    display: none;
+  }
+  .nav__first li:nth-child(7) {
+    display: block;
+    color: var(--orange1);
+  }
+  
+  .mobile {
+    display: none;
+  }
+
+  .header__primary--logo {
+    width: 30%;
+  }
+
+  .header__primary--about {
+    width: 70%;
+    transform: translateY(0px) !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .nav__first li {
+    display: block;
+  }
+  .nav__first .icon-close {
+    display: none;
+  }
+  .nav__first .nav__bar {
+    display: none;
+  }
+
+  .col-sm-12 {
+    flex: unset;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .header__primary--logo {
+    width: 30%;
+  }
+
+  .header__primary--about {
+    width: 70%;
+  }
+}
+
+@media (min-width:1200px) and (max-width: 1305px) {
+    form .submit {
+      transform: translateX(255px) !important;
+    }
+}
+
+@media (min-width: 423px) and (max-width: 590px) {
+  form span {
+    margin-right: unset !important;
+  }
+  form .submit {
+    padding: 0;
+  }
+}
+
+@media (min-width: 423px) and (max-width: 536px) {
+  form .submit {
+    padding: 0;
+    transform: translateX(222px) !important;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 637px) {
+  form button {
+    transform: translateX(250px);
+  }
+}
+
+@media (max-width: 422px) {
+  form {
+    text-align: center;
+    transform: translateX(25px);
+  }
+}
