@@ -55,6 +55,11 @@ html {
   color: var(--blue4);
 }
 
+.bg-or1 {
+  background-color: var(--orange1);
+  /* font-weight: 500; */
+}
+
 li {
   list-style: none;
 }
@@ -63,17 +68,8 @@ li {
   display: none !important;
 }
 
-.show {
-  display: block !important;
-}
-
 .header__primary {
   border: 1px solid #ccc;
-}
-
-.header__primary .header__primary--about {
-  /* text-align: left !important; */
-  /* transform: translateY(-10px); */
 }
 
 .header .row .col-9 {
@@ -102,10 +98,18 @@ li {
 .nav__first {
   background-color: var(--blue);
   border-bottom: 3px solid var(--orange1);
+  line-height: 45px;
 }
 
 .nav__first li {
+  padding: 0 10px;
+}
+         
+.btn__show {
+  background-color: unset;
+  border: none;
   padding: 10px;
+  color: var(--orange1);
 }
 
 .nav__first li a {
@@ -113,10 +117,11 @@ li {
   text-decoration: none;
 }
 
-.nav__first li:nth-child(1) {
+.nav__first li:hover {
   background-color: var(--orange1);
-  font-weight: 600;
+  cursor: pointer;
 }
+
 
 .body {
   margin-top: 20px;
@@ -134,10 +139,11 @@ li {
 
 .nav__second {
   border-bottom: 1px solid #ccc;
+  margin: 0 0 1rem 0;
 }
 
 .nav__second li {
-  padding: 0 10px 10px;
+  padding: 0 8px 11px;
   opacity: 0.7;
 }
 
@@ -151,6 +157,7 @@ li {
   padding: 14px;
   box-shadow: 1px 2px 8px 3px rgb(233, 227, 227);
   border: 1px solid #f5f3f3;
+  margin: 0 -1px 15px 0;
 }
 
 .nav__third li {
@@ -254,15 +261,12 @@ form {
   padding-left: unset !important;
 }
 
-.btn__show {
-  background-color: unset;
-  border: none;
-  padding: 10px;
-  color: var(--orange1);
-}
-
 .icon-close {
   float: right;
+}
+
+form input, form button {
+  border: 1px solid #ccc;
 }
 
 @media (max-width: 767px) {
@@ -280,7 +284,7 @@ form {
   }
 }
 
-@media (max-width: 579px) {
+@media (max-width: 618px) {
   form label {
     display: none;
   }
@@ -297,12 +301,13 @@ form {
     color: var(--orange1);
   }
   
-  .mobile {
+  .mobile, .icon--user {
     display: none;
   }
 
   .header__primary--logo {
     width: 30%;
+    padding: unset;
   }
 
   .header__primary--about {
@@ -360,6 +365,14 @@ form {
   }
 }
 
+@media (min-width: 537px) and (max-width: 565px) {
+  form .submit {
+    padding: 0;
+    transform: translateX(222px) !important;
+    margin-top: 15px;
+  }
+}
+
 @media (min-width: 637px) {
   form button {
     transform: translateX(250px);
@@ -371,4 +384,33 @@ form {
     text-align: center;
     transform: translateX(25px);
   }
+  .add {
+    display: none;
+  }
 }
+
+@media (min-width: 423px) and (max-width: 451px ) {
+  form .submit {
+    transform: translateX(-5px) !important;
+  }
+  form {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .nav__first {
+    line-height: 20px;
+  }
+  .nav__first li {
+    line-height: 45px;
+  }
+}
+
+@media screen {
+  .form__submit {
+     text-align: right;
+  }
+}
+
+
