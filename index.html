@@ -34,6 +34,17 @@
     ></script>
     <script>
       $(document).ready(() => {
+        $('#table__primary').DataTable({
+          processing: true,
+          ajax: "./data.json",
+          columns: [
+            {data: "name"},
+            {data: "status"},
+            {data: "request"},
+            {data: "user"},
+          ],
+          pageLength: 3
+        })
         $('.btn__show').click(() => {
           $('.nav__first li').addClass('col-sm-12')
           $('.nav__first li').fadeToggle(0, () => {
@@ -49,17 +60,6 @@
           $('.nav__second--li1').addClass('some')
           $('.nav__second--li2').removeClass('some')
           $('.nav__second--li3').removeClass('some')
-        })
-        $('#table__primary').DataTable({
-          processing: true,
-          ajax: "./data/data.json",
-          columns: [
-            {data: "name"},
-            {data: "status"},
-            {data: "request"},
-            {data: "user"},
-          ],
-          pageLength: 3
         })
         $('.nav__second--li2').click(() => {
           $('.nav__second--li1').removeClass('some')
@@ -82,17 +82,6 @@
           $('.nav__third').removeClass('show')
           $('#table').addClass('show')
         })
-        // $('#table__primary').DataTable({
-        //   processing: true,
-        //   ajax: "./data.json",
-        //   columns: [
-        //     {data: "name"},
-        //     {data: "status"},
-        //     {data: "request"},
-        //     {data: "user"},
-        //   ],
-        //   pageLength: 3
-        // })
       })
     </script>
   </head>
