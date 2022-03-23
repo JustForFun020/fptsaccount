@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "GIAO DỊCH LÔ LẺ - EzOddlot",
+            "status": "ĐANG SỬ DỤNG",
+            "request": "HỦY",
+            "user": "Nguyên Văn A"
+        },
+        {
+            "id": "2",
+            "name": "KÝ QUỸ THEO MÓN - EzMargin / EzMorgate",
+            "status": "CHƯA ĐĂNG KÝ",
+            "request": "ĐĂNG KÝ",
+            "user": "Nguyên Văn A"
+        },
+        {
+            "id": "3",
+            "name": "KÝ QUỸ THEO SỨC MUA - EzMarginPro",
+            "status": "CHƯA ĐĂNG KÝ",
+            "request": "ĐĂNG KÝ",
+            "user": "Nguyên Văn A"
+        },
+        {
+            "id": "4",
+            "name": "GIAO DỊCH HỢP ĐỒNG TƯƠNG LAI - EzFutures",
+            "status": "CHƯA ĐĂNG KÝ",
+            "request": "ĐĂNG KÝ",
+            "user": "Nguyên Văn A"
+        },
+        {
+            "id": "5",
+            "name": "TƯ VẤN ĐẦU TƯ - EzAdvisorSelect",
+            "status": "CHƯA ĐĂNG KÝ",
+            "request": "ĐĂNG KÝ",
+            "user": "Nguyên Văn A"
+        }
+    ]
+}
